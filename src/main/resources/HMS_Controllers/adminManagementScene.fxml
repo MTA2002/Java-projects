@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS_Controllers.AdminManagementController">
+   <children>
+      <Pane prefHeight="550.0" prefWidth="227.0" style="-fx-background-color: #B5D5C5;" />
+      <Label layoutX="301.0" layoutY="106.0" prefHeight="44.0" prefWidth="321.0" text="Please Enter your choice">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="347.0" layoutY="182.0" mnemonicParsing="false" onAction="#manageDoctorsOnAction" prefHeight="44.0" prefWidth="241.0" stylesheets="@button.css" text="Manage Doctors" />
+      <Button layoutX="347.0" layoutY="253.0" mnemonicParsing="false" onAction="#manageReceptionistsOnAction" prefHeight="44.0" prefWidth="241.0" stylesheets="@button.css" text="Manage Receptionists" />
+      <Button layoutX="347.0" layoutY="329.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="44.0" prefWidth="241.0" stylesheets="@button.css" text="Go Back" />
+   </children>
+</AnchorPane>
