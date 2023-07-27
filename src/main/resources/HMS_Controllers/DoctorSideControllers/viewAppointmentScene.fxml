@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS_Controllers.DoctorSideControllers.ViewAppointmentsController">
+    <children>
+        <Button mnemonicParsing="false" onAction="#goBackOnAction" stylesheets="@../button.css" text="Back" />
+        <Label alignment="CENTER" layoutX="87.0" layoutY="-1.0" prefHeight="43.0" prefWidth="711.0" text="Available Appointment's">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="appointmentTable" layoutY="43.0" prefHeight="507.0" prefWidth="807.0">
+            <columns>
+                <TableColumn fx:id="appointmentIdColumn" prefWidth="122.0" text="Appointment ID" />
+                <TableColumn fx:id="patientName" prefWidth="130.0" text="Patient's Name" />
+                <TableColumn fx:id="patientAge" prefWidth="124.0" text="Patient's Age" />
+            <TableColumn fx:id="patientGender" prefWidth="132.0" text="Patient's Gender" />
+                <TableColumn fx:id="dateOfAppointmentColumn" prefWidth="145.0" text="Date of Appointment" />
+                <TableColumn fx:id="timeOfAppointmentColumn" maxWidth="223.0" prefWidth="153.0" text="Time of Appointment" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

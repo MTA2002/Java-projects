@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS_Controllers.ReceptionistControllers.ReceptionistManagementController">
+    <children>
+        <VBox layoutX="568.0" prefHeight="550.0" prefWidth="232.0" style="-fx-background-color: #B5D5C5;" />
+        <Label layoutX="40.0" layoutY="40.0" prefHeight="32.0" prefWidth="385.0" text="Please Select your Choice">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button layoutX="171.0" layoutY="101.0" mnemonicParsing="false" onAction="#addReceptionistOnAction" prefHeight="45.0" prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Add Receptionist" />
+        <Button layoutX="172.0" layoutY="231.0" mnemonicParsing="false" onAction="#searchReceptionistOnAction" prefHeight="45.0" prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Search for A Receptionist" />
+        <Button layoutX="170.0" layoutY="302.0" mnemonicParsing="false" onAction="#updateReceptionistOnAction" prefHeight="45.0" prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Update Receptionist Info" />
+        <Button layoutX="171.0" layoutY="379.0" mnemonicParsing="false" onAction="#removeReceptionistOnAction" prefHeight="45.0" prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Remove A Receptionist" />
+        <Button layoutX="171.0" layoutY="164.0" mnemonicParsing="false" onAction="#displayReceptionistOnAction" prefHeight="45.0" prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Display All Receptionists" />
+        <Button layoutX="170.0" layoutY="455.0" mnemonicParsing="false" onAction="#goBackOnAction" prefHeight="45.0" prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Go Back" />
+    </children>
+</AnchorPane>

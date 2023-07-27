@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS_Controllers.PatientSideControllers.PatientSideManagement">
+    <children>
+        <Pane prefHeight="550.0" prefWidth="227.0" style="-fx-background-color: #B5D5C5;" />
+        <Label layoutX="267.0" layoutY="38.0" prefHeight="44.0" prefWidth="321.0" text="Please Enter your choice">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button layoutX="347.0" layoutY="109.0" mnemonicParsing="false" onAction="#manageAppointmentsOnAction" prefHeight="44.0" prefWidth="251.0" stylesheets="@../button.css" text="Manage your appointment" />
+        <Button layoutX="347.0" layoutY="325.0" mnemonicParsing="false" onAction="#changePasswordOnAction" prefHeight="44.0" prefWidth="251.0" stylesheets="@../button.css" text="Change your Password" />
+        <Button layoutX="347.0" layoutY="399.0" mnemonicParsing="false" onAction="#goBackOnAction" prefHeight="44.0" prefWidth="251.0" stylesheets="@../button.css" text="Go Back" />
+      <Button layoutX="347.0" layoutY="180.0" mnemonicParsing="false" onAction="#viewPrescriptionOnAction" prefHeight="44.0" prefWidth="251.0" stylesheets="@../button.css" text="View your Prescription" />
+      <Button layoutX="347.0" layoutY="253.0" mnemonicParsing="false" onAction="#viewBillOnAction" prefHeight="44.0" prefWidth="251.0" stylesheets="@../button.css" text="View your Bill" />
+    </children>
+</AnchorPane>

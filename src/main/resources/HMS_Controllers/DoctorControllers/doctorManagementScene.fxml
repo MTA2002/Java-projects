@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0"
+            prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="HMS_Controllers.DoctorControllers.DoctorManagementController">
+    <VBox layoutX="549.0" prefHeight="550.0" prefWidth="251.0" style="-fx-background-color: #B5D5C5;"/>
+    <Label layoutX="52.0" layoutY="44.0" prefHeight="32.0" prefWidth="385.0" text="Please Select your Choice">
+        <font>
+            <Font size="22.0"/>
+        </font>
+    </Label>
+
+    <Button layoutX="153.0" layoutY="101.0" mnemonicParsing="false" onAction="#addDoctorOnAction" prefHeight="45.0"
+            prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Add Doctor"/>
+    <Button layoutX="153.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchDoctorOnAction" prefHeight="45.0"
+            prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Search for A Doctor"/>
+    <Button layoutX="153.0" layoutY="303.0" mnemonicParsing="false" onAction="#updateDoctorOnAction" prefHeight="45.0"
+            prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Update Doctor Info"/>
+    <Button layoutX="153.0" layoutY="378.0" mnemonicParsing="false" onAction="#removeDoctorOnAction" prefHeight="45.0"
+            prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Remove A Doctor"/>
+    <Button layoutX="153.0" layoutY="164.0" mnemonicParsing="false" onAction="#displayDoctorOnAction" prefHeight="45.0"
+            prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Display All Doctors"/>
+    <Button layoutX="153.0" layoutY="455.0" mnemonicParsing="false" onAction="#goBackOnAction" prefHeight="45.0"
+            prefWidth="220.0" style="-fx-padding: 10;" stylesheets="@../button.css" text="Go Back"/>
+</AnchorPane>

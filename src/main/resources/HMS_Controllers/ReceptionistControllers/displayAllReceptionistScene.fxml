@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS_Controllers.ReceptionistControllers.DisplayAllReceptionistController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#backButtonOnAction" stylesheets="@../button.css" text="Back" />
+      <Label alignment="CENTER" layoutX="219.0" prefHeight="43.0" prefWidth="302.0" text="Receptionist's Information ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="receptionistTable" layoutY="43.0" prefHeight="507.0" prefWidth="800.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="167.0" text="Name" />
+            <TableColumn fx:id="idColumn" prefWidth="67.0" text="Id" />
+            <TableColumn fx:id="genderColumn" prefWidth="70.0" text="Gender" />
+            <TableColumn fx:id="ageColumn" prefWidth="71.0" text="Age" />
+            <TableColumn fx:id="phoneColumn" minWidth="0.0" prefWidth="166.0" text="Phone" />
+            <TableColumn fx:id="salaryColumn" prefWidth="101.0" text="Salary" />
+            <TableColumn fx:id="passwordColumn" prefWidth="157.0" text="Password" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

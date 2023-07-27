@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS_Controllers.ReceptionistControllers.UpdateReceptionistController">
+    <Pane prefHeight="554.0" prefWidth="235.0" style="-fx-background-color: #B5D5C5;" />
+    <Label layoutX="305.0" layoutY="83.0" prefHeight="51.0" prefWidth="369.0" text="Please Enter the Id of the Receptionist">
+        <font>
+            <Font size="22.0" />
+        </font>
+    </Label>
+    <Label layoutX="329.0" layoutY="170.0" prefHeight="28.0" prefWidth="57.0" text="Id">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <TextField fx:id="idTextField" layoutX="379.0" layoutY="166.0" prefHeight="36.0" prefWidth="168.0" />
+    <Button fx:id="updateButton" layoutX="350.0" layoutY="238.0" mnemonicParsing="false" onAction="#updateOnAction" stylesheets="@../button.css" text="Update" />
+    <Button layoutX="475.0" layoutY="238.0" mnemonicParsing="false" onAction="#goBackOnAction" stylesheets="@../button.css" text="Cancel" />
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS_Controllers.PatientSideControllers.PatientLoginController">
+    <children>
+        <Pane layoutX="563.0" layoutY="-1.0" prefHeight="556.0" prefWidth="237.0" style="-fx-background-color: #B5D5C5;" />
+        <Label layoutX="33.0" layoutY="106.0" prefHeight="44.0" prefWidth="367.0" text="Please provide your login information">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="190.0" prefHeight="28.0" prefWidth="88.0" text="Username">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameTextField" layoutX="140.0" layoutY="187.0" prefHeight="34.0" prefWidth="229.0" />
+        <Label layoutX="33.0" layoutY="245.0" prefHeight="28.0" prefWidth="88.0" text="Password">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="passwordTextField" layoutX="140.0" layoutY="242.0" prefHeight="34.0" prefWidth="229.0" />
+        <Button layoutX="146.0" layoutY="303.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="28.0" prefWidth="88.0" stylesheets="@../button.css" text="Login" />
+        <Button layoutX="254.0" layoutY="303.0" mnemonicParsing="false" onAction="#CancelButtonOnAction" prefHeight="17.0" prefWidth="96.0" stylesheets="@../button.css" text="Cancel" />
+    </children>
+</AnchorPane>
